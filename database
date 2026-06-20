@@ -1,0 +1,31 @@
+create database company ;
+use company;
+
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    role VARCHAR(50)
+);
+
+CREATE TABLE candidates (
+    id INTEGER PRIMARY KEY,
+    full_name VARCHAR(50),
+    email VARCHAR(50) UNIQUE,
+    phone VARCHAR(20),
+    education VARCHAR(200),
+    experience_years INTEGER,
+    skills TEXT,
+    resume_path VARCHAR(255)
+);
+
+CREATE TABLE job_descriptions (
+    id INTEGER PRIMARY KEY,
+    title VARCHAR(150),
+    department VARCHAR(100),
+    required_skills TEXT,
+    experience_required INTEGER,
+    education_required VARCHAR(200),
+    description TEXT
+);
