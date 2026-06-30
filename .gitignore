@@ -1,0 +1,40 @@
+# Virtual Environments
+venv/
+.venv/
+Backend/venv/
+Frontend/venv/
+
+# Environment Variables
+.env
+Backend/.env
+Frontend/.env
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Database
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+
+# Test files
+test_*.py
+
+# Local databases
+Backend/*.db
+Backend/*.sqlite3
